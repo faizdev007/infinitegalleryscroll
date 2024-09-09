@@ -21,8 +21,52 @@
             <!-- Page Heading -->
             @if (isset($header))
                 <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
+                    <div class="max-w-7xl overflow-auto flex gap-4 mx-auto py-2 px-4 sm:px-6 lg:px-8 overflow-x-auto">
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('dashboard')" class="border-gray-700 border border-dashed rounded-lg d-block bg-gray-200 px-2" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
                     </div>
                 </header>
             @endif

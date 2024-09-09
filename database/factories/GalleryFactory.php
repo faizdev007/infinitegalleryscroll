@@ -16,9 +16,17 @@ class GalleryFactory extends Factory
      */
     public function definition(): array
     {
+        $random_number = rand(1, 100);
+
+        if ($random_number % 2 == 0) {
+            $result = "even";
+        } else {
+            $result = "odd";
+        }
+
         return [
             'title' => fake()->title(),
-            'image_path' => '/gallery/dummy-2195526_1280.jpg',
+            'image_path' => $result == 'odd' ? '/gallery/dummy-2195526_1280.jpg' : '/gallery/list2.png',
         ];
     }
 }

@@ -5,8 +5,8 @@
         </h2>
     </x-slot>
 
-    <div class="container mx-auto my-10">
-        <div id="gallery" class="grid grid-cols-3 gap-4">
+    <div class="container mx-auto md:my-10 p-2">
+        <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         <!-- Gallery items will be appended here -->
         </div>
         <div id="loading" class="text-center my-4" style="display: none;">
@@ -22,13 +22,11 @@
         async function loadMore() {
             try {
                 loading.style.display = 'block';
-                const response = await fetch(`/gallery/load-more?page=${page}`);
+                const response = await fetch(`/load-more?page=${page}`);
                 const data = await response.json();
                 data.data.forEach(item => {
-                    const div = document.createElement('div');
-                    div.classList.add('gallery-item');
-                    div.innerHTML = `<img src="${item.image_path}" alt="${item.title}">`;
-                    gallery.appendChild(div);
+                    var single = singlegalleryimg(item);
+                    gallery.appendChild(single);
                 });
                 if (data.next_page_url) {
                     page++;

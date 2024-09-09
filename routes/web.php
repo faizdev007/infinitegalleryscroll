@@ -14,16 +14,16 @@ use App\Http\Controllers\GalleryController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::controller(GalleryController::class)->prefix('gallery')->group(function () {
+Route::controller(GalleryController::class)->group(function () {
     Route::get('/', 'index')->name('index');
     Route::get('/test', 'index')->name('test');
     Route::get('/load-more', 'loadMore')->name('load-more');
 });
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
